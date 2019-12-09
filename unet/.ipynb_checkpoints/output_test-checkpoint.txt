@@ -1,0 +1,44 @@
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/ematsu/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2019-12-04 18:23:21.915012: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-12-04 18:23:22.109062: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /share/sw/open/oracle/18.5.0.0/lib/:
+2019-12-04 18:23:22.109089: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2019-12-04 18:23:22.109119: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (nero-login-1.stanford.edu): /proc/driver/nvidia/version does not exist
+2019-12-04 18:23:22.111323: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2019-12-04 18:23:22.112928: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b28ae3ed50 executing computations on platform Host. Devices:
+2019-12-04 18:23:22.112986: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-12-04 18:23:22.179225: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From /home/ematsu/.local/lib/python2.7/site-packages/tensorflow/python/ops/nn_impl.py:180: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/ematsu/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2019-12-04 18:23:36.943281: W tensorflow/core/framework/allocator.cc:107] Allocation of 2147483648 exceeds 10% of system memory.
+2019-12-04 18:23:37.214423: W tensorflow/core/framework/allocator.cc:107] Allocation of 2147483648 exceeds 10% of system memory.
+2019-12-04 18:23:37.801746: W tensorflow/core/framework/allocator.cc:107] Allocation of 1073741824 exceeds 10% of system memory.
+2019-12-04 18:23:38.059904: W tensorflow/core/framework/allocator.cc:107] Allocation of 1073741824 exceeds 10% of system memory.
+2019-12-04 18:23:42.545731: W tensorflow/core/framework/allocator.cc:107] Allocation of 1073741824 exceeds 10% of system memory.
+Loading test data from files...
+Test data loaded
+
+ 32/560 [>.............................] - ETA: 5:27
+ 64/560 [==>...........................] - ETA: 4:54
+ 96/560 [====>.........................] - ETA: 4:33
+128/560 [=====>........................] - ETA: 4:09
+160/560 [=======>......................] - ETA: 3:47
+192/560 [=========>....................] - ETA: 3:28
+224/560 [===========>..................] - ETA: 3:11
+256/560 [============>.................] - ETA: 2:52
+288/560 [==============>...............] - ETA: 2:34
+320/560 [================>.............] - ETA: 2:16
+352/560 [=================>............] - ETA: 1:58
+384/560 [===================>..........] - ETA: 1:40
+416/560 [=====================>........] - ETA: 1:22
+448/560 [=======================>......] - ETA: 1:03
+480/560 [========================>.....] - ETA: 45s 
+512/560 [==========================>...] - ETA: 27s
+544/560 [============================>.] - ETA: 9s 
+560/560 [==============================] - 317s 566ms/step
+Accuracy: 99.99
+2439257.5

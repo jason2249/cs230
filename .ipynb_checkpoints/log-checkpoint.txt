@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "process_data_nvidia.py", line 4, in <module>
+    import nibabel as nib
+ModuleNotFoundError: No module named 'nibabel'

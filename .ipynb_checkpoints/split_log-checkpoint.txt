@@ -1,0 +1,6 @@
+Loading data and labels...
+Loaded data and labels
+(490, 512, 512, 16)
+(490, 512, 512, 16)
+Save split...
+All data splits saved to file

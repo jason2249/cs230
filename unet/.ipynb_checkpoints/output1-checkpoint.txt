@@ -1,0 +1,92 @@
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/jason0/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+/share/pi/hackhack/Breast/Breast_MRI/ericjason230/github_public/unet/model.py:55: UserWarning: Update your `Model` call to the Keras 2 API: `Model(outputs=Tensor("co..., inputs=Tensor("in...)`
+  model = Model(input = inputs, output = conv10)
+WARNING:tensorflow:From /home/jason0/.local/lib/python2.7/site-packages/tensorflow/python/ops/nn_impl.py:180: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2019-11-27 01:52:52.700498: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-11-27 01:52:52.744111: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /share/sw/open/oracle/18.5.0.0/lib/:
+2019-11-27 01:52:52.744137: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2019-11-27 01:52:52.744169: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (nero-login-1.stanford.edu): /proc/driver/nvidia/version does not exist
+2019-11-27 01:52:52.765045: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2019-11-27 01:52:52.766682: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56020f2363e0 executing computations on platform Host. Devices:
+2019-11-27 01:52:52.766707: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-11-27 01:52:53.033875: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From /home/jason0/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+Loading train data from files...
+Train data loaded
+Epoch 1/1
+
+  32/2236 [..............................] - ETA: 2:17:29 - loss: 0.3640 - accuracy: 0.9984
+  64/2236 [..............................] - ETA: 2:07:52 - loss: 0.9476 - accuracy: 0.9985
+  96/2236 [>.............................] - ETA: 2:04:26 - loss: 0.7672 - accuracy: 0.9989
+ 128/2236 [>.............................] - ETA: 2:03:54 - loss: 0.5858 - accuracy: 0.9991
+ 160/2236 [=>............................] - ETA: 2:01:27 - loss: 0.7791 - accuracy: 0.9990
+ 192/2236 [=>............................] - ETA: 2:00:07 - loss: 0.6718 - accuracy: 0.9991
+ 224/2236 [==>...........................] - ETA: 1:59:19 - loss: 0.6058 - accuracy: 0.9991
+ 256/2236 [==>...........................] - ETA: 1:57:09 - loss: 0.5520 - accuracy: 0.9991
+ 288/2236 [==>...........................] - ETA: 1:54:39 - loss: 0.5056 - accuracy: 0.9992
+ 320/2236 [===>..........................] - ETA: 1:52:35 - loss: 0.4758 - accuracy: 0.9992
+ 352/2236 [===>..........................] - ETA: 1:50:22 - loss: 0.4392 - accuracy: 0.9993
+ 384/2236 [====>.........................] - ETA: 1:48:11 - loss: 0.4196 - accuracy: 0.9993
+ 416/2236 [====>.........................] - ETA: 1:46:32 - loss: 0.3945 - accuracy: 0.9993
+ 448/2236 [=====>........................] - ETA: 1:44:47 - loss: 0.3742 - accuracy: 0.9993
+ 480/2236 [=====>........................] - ETA: 1:42:32 - loss: 0.3671 - accuracy: 0.9992
+ 512/2236 [=====>........................] - ETA: 1:40:19 - loss: 0.3501 - accuracy: 0.9992
+ 544/2236 [======>.......................] - ETA: 1:38:21 - loss: 0.3384 - accuracy: 0.9992
+ 576/2236 [======>.......................] - ETA: 1:36:36 - loss: 0.3282 - accuracy: 0.9992
+ 608/2236 [=======>......................] - ETA: 1:34:36 - loss: 0.3178 - accuracy: 0.9991
+ 640/2236 [=======>......................] - ETA: 1:33:01 - loss: 0.3043 - accuracy: 0.9992
+ 672/2236 [========>.....................] - ETA: 1:31:16 - loss: 0.3025 - accuracy: 0.9991
+ 704/2236 [========>.....................] - ETA: 1:29:25 - loss: 0.2932 - accuracy: 0.9991
+ 736/2236 [========>.....................] - ETA: 1:27:33 - loss: 0.2840 - accuracy: 0.9991
+ 768/2236 [=========>....................] - ETA: 1:25:39 - loss: 0.2769 - accuracy: 0.9991
+ 800/2236 [=========>....................] - ETA: 1:23:43 - loss: 0.2694 - accuracy: 0.9991
+ 832/2236 [==========>...................] - ETA: 1:22:18 - loss: 0.2615 - accuracy: 0.9991
+ 864/2236 [==========>...................] - ETA: 1:20:26 - loss: 0.2541 - accuracy: 0.9991
+ 896/2236 [===========>..................] - ETA: 1:18:28 - loss: 0.2485 - accuracy: 0.9991
+ 928/2236 [===========>..................] - ETA: 1:16:34 - loss: 0.2404 - accuracy: 0.9991
+ 960/2236 [===========>..................] - ETA: 1:14:51 - loss: 0.2368 - accuracy: 0.9991
+ 992/2236 [============>.................] - ETA: 1:13:01 - loss: 0.2308 - accuracy: 0.9991
+1024/2236 [============>.................] - ETA: 1:11:05 - loss: 0.2261 - accuracy: 0.9991
+1056/2236 [=============>................] - ETA: 1:09:09 - loss: 0.2208 - accuracy: 0.9991
+1088/2236 [=============>................] - ETA: 1:07:16 - loss: 0.2158 - accuracy: 0.9991
+1120/2236 [==============>...............] - ETA: 1:05:19 - loss: 0.2112 - accuracy: 0.9992
+1152/2236 [==============>...............] - ETA: 1:03:35 - loss: 0.2074 - accuracy: 0.9991
+1184/2236 [==============>...............] - ETA: 1:01:43 - loss: 0.2031 - accuracy: 0.9991
+1216/2236 [===============>..............] - ETA: 59:48 - loss: 0.1987 - accuracy: 0.9991  
+1248/2236 [===============>..............] - ETA: 57:56 - loss: 0.1940 - accuracy: 0.9992
+1280/2236 [================>.............] - ETA: 56:00 - loss: 0.1915 - accuracy: 0.9991
+1312/2236 [================>.............] - ETA: 54:18 - loss: 0.1876 - accuracy: 0.9991
+1344/2236 [=================>............] - ETA: 52:23 - loss: 0.1841 - accuracy: 0.9991
+1376/2236 [=================>............] - ETA: 50:27 - loss: 0.1810 - accuracy: 0.9992
+1408/2236 [=================>............] - ETA: 48:31 - loss: 0.1776 - accuracy: 0.9992
+1440/2236 [==================>...........] - ETA: 46:35 - loss: 0.1744 - accuracy: 0.9992
+1472/2236 [==================>...........] - ETA: 44:40 - loss: 0.1743 - accuracy: 0.9991
+1504/2236 [===================>..........] - ETA: 42:46 - loss: 0.1719 - accuracy: 0.9991
+1536/2236 [===================>..........] - ETA: 40:56 - loss: 0.1696 - accuracy: 0.9991
+1568/2236 [====================>.........] - ETA: 39:02 - loss: 0.1675 - accuracy: 0.9991
+1600/2236 [====================>.........] - ETA: 37:13 - loss: 0.1657 - accuracy: 0.9990
+1632/2236 [====================>.........] - ETA: 35:19 - loss: 0.1633 - accuracy: 0.9991
+1664/2236 [=====================>........] - ETA: 33:24 - loss: 0.1603 - accuracy: 0.9991
+1696/2236 [=====================>........] - ETA: 31:31 - loss: 0.1591 - accuracy: 0.9990
+1728/2236 [======================>.......] - ETA: 29:40 - loss: 0.1573 - accuracy: 0.9990
+1760/2236 [======================>.......] - ETA: 27:48 - loss: 0.1559 - accuracy: 0.9990
+1792/2236 [=======================>......] - ETA: 25:54 - loss: 0.1533 - accuracy: 0.9990
+1824/2236 [=======================>......] - ETA: 24:03 - loss: 0.1509 - accuracy: 0.9991
+1856/2236 [=======================>......] - ETA: 22:12 - loss: 0.1483 - accuracy: 0.9991
+1888/2236 [========================>.....] - ETA: 20:20 - loss: 0.1460 - accuracy: 0.9991
+1920/2236 [========================>.....] - ETA: 18:28 - loss: 0.1437 - accuracy: 0.9991
+1952/2236 [=========================>....] - ETA: 16:35 - loss: 0.1418 - accuracy: 0.9991
+1984/2236 [=========================>....] - ETA: 14:43 - loss: 0.1400 - accuracy: 0.9991
+2016/2236 [==========================>...] - ETA: 12:51 - loss: 0.1380 - accuracy: 0.9991
+2048/2236 [==========================>...] - ETA: 10:59 - loss: 0.1361 - accuracy: 0.9991
+2080/2236 [==========================>...] - ETA: 9:07 - loss: 0.1344 - accuracy: 0.9991 
+2112/2236 [===========================>..] - ETA: 7:15 - loss: 0.1327 - accuracy: 0.9991
+2144/2236 [===========================>..] - ETA: 5:22 - loss: 0.1312 - accuracy: 0.9991
+2176/2236 [============================>.] - ETA: 3:30 - loss: 0.1294 - accuracy: 0.9991
+2208/2236 [============================>.] - ETA: 1:38 - loss: 0.1279 - accuracy: 0.9991
+2236/2236 [==============================] - 7842s 4s/step - loss: 0.1265 - accuracy: 0.9991
